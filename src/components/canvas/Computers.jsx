@@ -42,7 +42,6 @@ useEffect(() => {
 
 const ENTRY_SPEED = 0.4;
 
-
 useFrame((_, dt) => {
   if (!group.current) return;
 
