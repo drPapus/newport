@@ -1,0 +1,11 @@
+Model Information:
+* title:	Crawling robotic spider
+* source:	https://sketchfab.com/3d-models/crawling-robotic-spider-90dbaa3142a044698ef549f3545bbcd0
+* author:	OuterspaceSoftware (https://sketchfab.com/OuterspaceSoftware)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Crawling robotic spider" (https://sketchfab.com/3d-models/crawling-robotic-spider-90dbaa3142a044698ef549f3545bbcd0) by OuterspaceSoftware (https://sketchfab.com/OuterspaceSoftware) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

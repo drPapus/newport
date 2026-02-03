@@ -6,8 +6,10 @@ import { styles } from "../styles";
 import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
+import { useInViewOnce } from "../utils/useInViewOnce";
 
 const Contact = () => {
+  const { ref, visible } = useInViewOnce();
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -66,7 +68,7 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden`}
+      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 xl:gap-0 overflow-hidden`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
@@ -124,13 +126,15 @@ const Contact = () => {
       </motion.div>
 
       <motion.div
+        ref={ref}
         variants={slideIn("right", "tween", 0.2, 1)}
         className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
       >
-        <EarthCanvas />
+        {visible ? <EarthCanvas /> : null}
+        
       </motion.div>
     </div>
   );
 };
 
-export default SectionWrapper(Contact, "contact");
+export default SectionWrapper(Contact, "contact", "max-w-none w-full pr-0 sm:pr-0");

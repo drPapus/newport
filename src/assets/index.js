@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import logo from "./lod.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -21,14 +21,14 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.svg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import df from "./company/df.png";
+import methriaum from "./company/methriaum.png";
+import sidus from "./company/sidus.png";
+import up from "./company/up.png";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import sidusheroes from "./sidus.png";
+import hex from "./hex.png";
+import design from "./dfile.png";
 
 export {
   logo,
@@ -52,11 +52,11 @@ export {
   tailwind,
   typescript,
   threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  df,
+  methriaum,
+  sidus,
+  up,
+  sidusheroes,
+  hex,
+  design,
 };

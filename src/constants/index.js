@@ -15,13 +15,13 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
+  df,
+  methriaum,
+  sidus,
+  up,
+  sidusheroes,
+  hex,
+  design,
   threejs,
 } from "../assets";
 
@@ -116,55 +116,52 @@ const technologies = [
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Frontend Developer (Three.js / React)",
+    company_name: "DesignFiles",
+    icon: df,
+    iconBg: "#2C2F4A",
+    date: "Apr 2023 – Jan 2024",
+    points: [
+      "Built interactive and performant UI components using React and Three.js.",
+      "Worked closely with designers to translate UI/UX concepts into production-ready interfaces.",
+      "Improved frontend code structure, readability, and long-term maintainability.",
+      "Participated in sprint planning, UX reviews, and iterative feature development.",
+    ],
+  },
+  {
+    title: "Three.js Developer",
+    company_name: "Mithraeum",
+    icon: methriaum,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "May 2022 – Apr 2023",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Developed browser-based 3D scenes and interactive elements using Three.js and WebGL.",
+      "Implemented game-related interactions based on design and product requirements.",
+      "Focused on rendering performance and smooth real-time user experience.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    title: "JavaScript Developer",
+    company_name: "SIDUS NFT Heroes",
+    icon: sidus,
+    iconBg: "#1E1E2F",
+    date: "Feb 2022 – May 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Worked on gameplay UI and interaction logic using PlayCanvas.",
+      "Optimized rendering and user interactions for stable browser performance.",
+      "Collaborated with designers and developers in a fast-paced production environment.",
     ],
   },
   {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    title: "Freelance Frontend Developer / Webmaster",
+    company_name: "Self-employed",
+    icon: up,
+    iconBg: "#2D2E3A",
+    date: "2013 – 2022",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Delivered custom websites and small web applications for local businesses.",
+      "Built responsive layouts and integrated CMS solutions such as WordPress and OpenCart.",
+      "Worked directly with clients to gather requirements and deliver practical solutions.",
     ],
   },
 ];
@@ -198,67 +195,67 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "SIDUS",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "Browser-based game UI and interactions. Developed using PlayCanvas and JavaScript, focusing on performance and user experience.",
     tags: [
       {
-        name: "react",
+        name: "PlayCanvas",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
+        name: "JS",
         color: "green-text-gradient",
       },
       {
-        name: "tailwind",
+        name: "Blender",
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: sidusheroes,
+    source_code_link: "https://sidusheroes.com/",
   },
   {
-    name: "Job IT",
+    name: "Hexagonal Map Generator",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "Web application that generates and visualizes hexagonal maps for game development and geographic data visualization.",
     tags: [
       {
-        name: "react",
+        name: "Three.js",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "TS",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "Blender",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: hex,
+    source_code_link: "https://drpapus.github.io/Hexagonal-map/",
   },
   {
-    name: "Trip Guide",
+    name: "Designfiles",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "Simple, intuitive tools that won’t take months to learn Detailed video tutorials to help you every step of the way Browse over 500K products or add your own",
     tags: [
       {
-        name: "nextjs",
+        name: "Three.js",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "React.js",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "Blender",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: design,
+    source_code_link: "https://designfiles.co/",
   },
 ];
 
