@@ -1,7 +1,8 @@
 import { BrowserRouter } from "react-router-dom";
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas, EarthCanvas } from "./components";
+import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
 import { useInView } from "./utils/useInView";
+import  Footer  from "./components/Footer";
 
 const App = () => {
    const { ref, inView } = useInView({ threshold: 0.35 });
@@ -22,6 +23,7 @@ const App = () => {
         <div className='relative z-0'>
           <Contact />
           <StarsCanvas />
+          <Footer />
         </div>
       </div>
     </BrowserRouter>

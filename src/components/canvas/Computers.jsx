@@ -149,13 +149,15 @@ const ComputersCanvas = ({ enablePostprocessing = true }) => {
     >
       <Suspense fallback={null}>
         <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} minPolarAngle={Math.PI / 2} />
+         {/* <ambientLight color={"#fff8eb"}  position={[0, 0, 0]}  intensity={0.5} /> */}
 
         {/* <Environment preset="warehouse" /> */}
 
         <Environment preset="city" />
 
         <Computers isMobile={isMobile} />
-        {enablePostprocessing && (
+
+        {!isMobile && enablePostprocessing && (
         <EffectComposer multisampling={0}>
           <N8AO aoRadius={0.8} intensity={0.8} />
           <Bloom intensity={0.1} luminanceThreshold={0.45} luminanceSmoothing={0.5} />
@@ -164,10 +166,11 @@ const ComputersCanvas = ({ enablePostprocessing = true }) => {
           <Vignette eskil={false} offset={0.25} darkness={0.6} /> 
         </EffectComposer>
         )}
+        
+
+
       </Suspense>
 
-      {/* If you still get issues, comment this out temporarily */}
-      {/* <Preload all /> */}
     </Canvas>
   );
 };
